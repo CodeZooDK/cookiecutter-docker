@@ -4,6 +4,7 @@
   "github_username": "someone",
   "groupid": "dk.codezoo",
   "project_name": "docker",
+  "git_name": "cookiecutter-docker",
   "project_description": "",
   "major_version": "1",
   "minor_version": "0",
