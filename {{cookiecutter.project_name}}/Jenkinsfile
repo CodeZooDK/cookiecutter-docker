@@ -1,7 +1,6 @@
 node { 
-    def buildDetails = checkoutWithDetails(buildNumber:env.BUILD_NUMBER)
+    def buildDetails = checkoutWithDetails(buildNumber:env.BUILD_NUMBER, branch: env.BRANCH_NAME)
 
-    if(env.BRANCH_NAME == "master") {
-        buildDockerImage(buildDetails)
-    }
+    buildDockerImage(buildDetails)
+    
 }
